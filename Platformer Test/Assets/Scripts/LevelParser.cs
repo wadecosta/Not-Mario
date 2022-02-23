@@ -168,6 +168,11 @@ public class LevelParser : MonoBehaviour
 
     }
 
+    private void BlockInteractive(GameObject go)
+    {
+	    print(go.name);
+    }
+
 }
 
 
