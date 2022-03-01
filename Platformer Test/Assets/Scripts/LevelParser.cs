@@ -21,6 +21,8 @@ public class LevelParser : MonoBehaviour
 
     public GameObject Stone;
 
+    public GameObject Water;
+
     public Transform levelRoot;
 
 
@@ -111,6 +113,7 @@ public class LevelParser : MonoBehaviour
 		var stoneObject = Instantiate(Stone);
 		var brickObject = Instantiate(Brick);
 		var questionObject = Instantiate(QuestionBox);
+		var waterObject = Instantiate(Water);
 
 
 		if(letter == 'x')
@@ -132,6 +135,10 @@ public class LevelParser : MonoBehaviour
 		{
 			stoneObject.transform.position = new Vector3(column, row, 0f);
 
+		}
+		else if(letter == 'w')
+		{
+			waterObject.transform.position = new Vector3(column, row, 0f);
 		}
 
 
