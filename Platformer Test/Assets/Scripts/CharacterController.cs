@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     public float runForce = 10f;
-    public float jumpForce = 10f;
+    public float jumpForce = 20f;
     public float maxRunSpeed = 6f;
 
     public bool feetInContactWithGround;
@@ -50,5 +50,13 @@ public class CharacterController : MonoBehaviour
 		    body.velocity = new Vector3(newX, body.velocity.y, body.velocity.z);
 	    }
         
+    }
+
+void OnCollisionEnter(Collision collision)
+    {
+	    if(collision.gameObject.tag == "Water")
+	    {
+		    transform.position = new Vector3(14, 3, 0);
+	    }
     }
 }

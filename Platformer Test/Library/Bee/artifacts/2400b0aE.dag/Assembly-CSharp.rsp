@@ -348,6 +348,7 @@
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/CharacterController.cs"
 "Assets/Scripts/Coin.cs"
+"Assets/Scripts/GetCoin.cs"
 "Assets/Scripts/LevelParser.cs"
 "Assets/Scripts/Question.cs"
 "Assets/Scripts/Raycast.cs"

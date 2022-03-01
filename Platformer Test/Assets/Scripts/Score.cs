@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     {
 	    TextMeshProUGUI score_text = GetComponent<TextMeshProUGUI>();
 	    score_text.SetText("000000");
-	    Debug.Log("LET's GO");
+	    //Debug.Log("LET's GO");
         
     }
 

@@ -23,6 +23,8 @@ public class LevelParser : MonoBehaviour
 
     public GameObject Water;
 
+    public GameObject Coin;
+
     public Transform levelRoot;
 
 
@@ -114,6 +116,7 @@ public class LevelParser : MonoBehaviour
 		var brickObject = Instantiate(Brick);
 		var questionObject = Instantiate(QuestionBox);
 		var waterObject = Instantiate(Water);
+		var coinObject = Instantiate(Coin);
 
 
 		if(letter == 'x')
@@ -139,6 +142,10 @@ public class LevelParser : MonoBehaviour
 		else if(letter == 'w')
 		{
 			waterObject.transform.position = new Vector3(column, row, 0f);
+		}
+		else if(letter == '*')
+		{
+			coinObject.transform.position = new Vector3(column, row, 0f);
 		}
 
 

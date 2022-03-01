@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44658822, g: 0.49642307, b: 0.5748253, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -362,12 +362,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19a0833bea18233797b67c197521fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: Test
+  filename: New_Test
   Rock: {fileID: 6746664849672513775, guid: f0108acee1dd06c83bf53c41cf188097, type: 3}
   Brick: {fileID: 6746664849672513775, guid: 3d91283a5ad914b04b62bc85f59c00d7, type: 3}
   QuestionBox: {fileID: 6746664849672513775, guid: 50b5e0e1f2aa4077ea5ff66abe14c212, type: 3}
   Stone: {fileID: 6746664849672513775, guid: f6caf88aea173f87dbf5cd66abadf239, type: 3}
   Water: {fileID: 6746664849672513775, guid: 99d68d8164ead6fffa9d46bb7b65686d, type: 3}
+  Coin: {fileID: 6746664849672513775, guid: 2af2c0c0d4b29a96fbe8d75cede14827, type: 3}
   levelRoot: {fileID: 6746664849672513771, guid: f6caf88aea173f87dbf5cd66abadf239, type: 3}
 --- !u!4 &406602702
 Transform:
@@ -1127,7 +1128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runForce: 10
-  jumpForce: 20
+  jumpForce: 21
   maxRunSpeed: 6
   feetInContactWithGround: 0
 --- !u!136 &1110506068
@@ -1389,7 +1390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e60ce3d4fd4b5b99f60382a5706f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: 0
 --- !u!1 &1766735581
 GameObject:
   m_ObjectHideFlags: 0
