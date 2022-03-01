@@ -6,7 +6,8 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    private float totalTime = 301;
+    private float totalTime = 101;
+    public static bool isCompleted = false;
 
     TextMeshProUGUI timer_text;
 
@@ -30,6 +31,11 @@ public class Timer : MonoBehaviour
 
 		    //Debug.Log($"time is {Math.Floor(totalTime)}");
 
+	    }
+
+	    if((totalTime >= 0) && (isCompleted == false))
+	    {
+		    Debug.Log("Sorry... you failed to complete the level in time.");
 	    }
         
     }

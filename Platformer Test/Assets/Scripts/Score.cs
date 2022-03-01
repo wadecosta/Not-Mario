@@ -22,7 +22,7 @@ public class Score : MonoBehaviour
     void Update()
     {
 	    TextMeshProUGUI score_text = GetComponent<TextMeshProUGUI>();
-	    score_text.SetText(score.ToString());
+	    score_text.SetText(score.ToString() + "00");
 	    //Debug.Log(score.ToString());
     }
 }
